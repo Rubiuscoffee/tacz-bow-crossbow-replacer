@@ -37,7 +37,10 @@
 
 ## Credits and License
 
-This project is an **unofficial community port and adaptation** for Minecraft Bedrock Edition based on assets from the Java mod **Timeless and Classics Zero (TaCZ)**.
+### Bedrock Port & Maintainer:
+- **Ported to Bedrock by**: **Rubiuscoffee**
+- **Discord**: `@btwlauren`
+- **Updates & Issue Tracker**: [github.com/Rubiuscoffee/tacz-bow-crossbow-replacer](https://github.com/Rubiuscoffee/tacz-bow-crossbow-replacer)
 
 ### Original Project Credits:
 - **Original Java Mod**: [Timeless and Classics Zero (TaCZ) on CurseForge](https://www.curseforge.com/minecraft/mc-mods/timeless-and-classics-zero)
