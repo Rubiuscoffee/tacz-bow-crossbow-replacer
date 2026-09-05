@@ -1,0 +1,27 @@
+LICENSE INFORMATION
+
+This project contains code, animations, and visual/audio assets derived from or inspired by
+the original Minecraft Java mod "Timeless and Classics Zero" (TaCZ).
+
+1. ASSETS LICENSE (Models, Textures, Sounds, Animations):
+   Licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0).
+   https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+   Original Creators:
+   The [TaCZ] Timeless and Classics Zero Guns Team
+   https://www.curseforge.com/minecraft/mc-mods/timeless-and-classics-zero
+
+   - Attribution: You must give appropriate credit to The [TaCZ] Team.
+   - NonCommercial: You may not use the material for commercial purposes.
+   - NoDerivatives: If you remix, transform, or build upon the material, you may not distribute the modified material commercially or claim ownership.
+
+   Special Acknowledgement:
+   Special thanks to the TACZ Black Ops Bedrock community port for initial animation controller references.
+
+2. CODE AND ENGINE CONFIGURATIONS (Minecraft Bedrock JSON & Molang scripts):
+   Licensed under the GNU General Public License v3.0 (GPL-3.0).
+   https://www.gnu.org/licenses/gpl-3.0.txt
+
+DISCLAIMER:
+This is an unofficial fan port for Minecraft Bedrock Edition.
+NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR THE TACZ TEAM.

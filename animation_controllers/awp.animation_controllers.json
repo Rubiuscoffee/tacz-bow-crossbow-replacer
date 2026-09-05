@@ -1,0 +1,251 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.awp.fp": {
+      "initial_state": "hold",
+      "states": {
+        "draw": {
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "animations": [
+            {
+              "awp_draw": "v.awp"
+            }
+          ],
+          "transitions": [
+            {
+              "hold": "v.awp"
+            },
+            {
+              "draw": "!v.awp"
+            }
+          ]
+        },
+        "hold": {
+          "blend_transition": 0.15,
+          "blend_via_shortest_path": true,
+          "animations": [
+            {
+              "awp_fp_hold": "v.awp"
+            }
+          ],
+          "transitions": [
+            {
+              "bolt": "v.awp && (v.shot_bow || variable.attack_time > 0.0)"
+            },
+            {
+              "sight": "v.awp && q.is_sneaking"
+            },
+            {
+              "sprint": "v.awp && q.is_sprinting && !q.is_sneaking"
+            },
+            {
+              "inspect": "v.awp && !v.is_inspecting && v.idle_time >= 6.0"
+            },
+            {
+              "draw": "!v.awp"
+            }
+          ]
+        },
+        "sight": {
+          "blend_transition": 0.12,
+          "blend_via_shortest_path": true,
+          "animations": [
+            {
+              "awp_fp_sight_standard_8": "v.awp"
+            }
+          ],
+          "transitions": [
+            {
+              "bolt": "v.awp && (v.shot_bow || variable.attack_time > 0.0)"
+            },
+            {
+              "hold": "v.awp && !q.is_sneaking"
+            },
+            {
+              "draw": "!v.awp"
+            }
+          ]
+        },
+        "bolt": {
+          "blend_transition": 0.08,
+          "blend_via_shortest_path": true,
+          "animations": [
+            {
+              "awp_fp_bolt": "v.awp"
+            }
+          ],
+          "transitions": [
+            {
+              "sight": "v.awp && q.all_animations_finished && q.is_sneaking"
+            },
+            {
+              "sprint": "v.awp && q.all_animations_finished && q.is_sprinting"
+            },
+            {
+              "hold": "v.awp && q.all_animations_finished"
+            },
+            {
+              "draw": "!v.awp"
+            }
+          ]
+        },
+        "sprint": {
+          "blend_transition": 0.15,
+          "blend_via_shortest_path": true,
+          "animations": [
+            {
+              "awp_fp_sprint": "v.awp"
+            }
+          ],
+          "transitions": [
+            {
+              "bolt": "v.awp && (v.shot_bow || variable.attack_time > 0.0)"
+            },
+            {
+              "sight": "v.awp && q.is_sneaking"
+            },
+            {
+              "hold": "v.awp && (!q.is_sprinting || q.is_sneaking)"
+            },
+            {
+              "draw": "!v.awp"
+            }
+          ]
+        },
+        "inspect": {
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "animations": [
+            {
+              "awp_fp_inspect": "v.awp"
+            }
+          ],
+          "transitions": [
+            {
+              "bolt": "v.awp && (v.shot_bow || variable.attack_time > 0.0)"
+            },
+            {
+              "sight": "v.awp && q.is_sneaking"
+            },
+            {
+              "hold": "v.awp && (q.all_animations_finished || q.is_sprinting || q.modified_move_speed > 0.1 || variable.attack_time > 0.0)"
+            },
+            {
+              "draw": "!v.awp"
+            }
+          ],
+          "on_entry": [
+            "v.is_inspecting = 1.0;",
+            "v.idle_time = 0.0;"
+          ],
+          "on_exit": [
+            "v.is_inspecting = 0.0;",
+            "v.idle_time = 0.0;"
+          ]
+        }
+      }
+    },
+    "controller.animation.awp.walk": {
+      "initial_state": "setup",
+      "states": {
+        "setup": {
+          "blend_transition": 0.5,
+          "blend_via_shortest_path": true,
+          "transitions": [
+            {
+              "walk": "v.awp && q.is_moving && !q.is_sprinting && !q.is_sneaking && !q.is_using_item"
+            }
+          ]
+        },
+        "walk": {
+          "blend_transition": 0.5,
+          "blend_via_shortest_path": true,
+          "animations": [
+            {
+              "universal_walk": "v.awp"
+            },
+            {
+              "walk_delay_2": "v.awp"
+            }
+          ],
+          "transitions": [
+            {
+              "delay": "v.awp && (q.is_sprinting || q.is_sneaking || q.is_using_item)"
+            },
+            {
+              "delay": "v.awp && !q.is_moving && q.any_animation_finished"
+            }
+          ]
+        },
+        "delay": {
+          "blend_transition": 0.5,
+          "blend_via_shortest_path": true,
+          "animations": [
+            {
+              "walk_delay": "v.awp"
+            }
+          ],
+          "transitions": [
+            {
+              "setup": "v.awp && q.any_animation_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.awp.tp": {
+      "initial_state": "hold",
+      "states": {
+        "hold": {
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "animations": [
+            {
+              "awp_tp_hold": "v.awp"
+            }
+          ],
+          "transitions": [
+            {
+              "sight": "v.awp && (q.is_using_item || (variable.item_use_normalized > 0 && variable.item_use_normalized < 1.0))"
+            },
+            {
+              "sprint": "v.awp && q.is_sprinting && !q.is_using_item"
+            }
+          ]
+        },
+        "sight": {
+          "blend_transition": 0.15,
+          "blend_via_shortest_path": true,
+          "animations": [
+            {
+              "awp_tp_sight": "v.awp"
+            }
+          ],
+          "transitions": [
+            {
+              "hold": "v.awp && !q.is_using_item && (variable.item_use_normalized == 0.0 || variable.item_use_normalized >= 1.0)"
+            }
+          ]
+        },
+        "sprint": {
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "animations": [
+            {
+              "awp_tp_sprint": "v.awp"
+            }
+          ],
+          "transitions": [
+            {
+              "sight": "v.awp && (q.is_using_item || (variable.item_use_normalized > 0 && variable.item_use_normalized < 1.0))"
+            },
+            {
+              "hold": "v.awp && !q.is_sprinting"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

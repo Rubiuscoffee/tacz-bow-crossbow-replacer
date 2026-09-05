@@ -1,0 +1,282 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.itemscale": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ]
+    },
+    "controller.render.awp": {
+      "geometry": "Geometry.awp",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.awp"
+      ],
+      "part_visibility": [
+        {
+          "*": true
+        },
+        {
+          "sight": false
+        },
+        {
+          "iron_sight": false
+        },
+        {
+          "frontsight": false
+        },
+        {
+          "group8": false
+        },
+        {
+          "sight_illuminated": false
+        },
+        {
+          "rearsight": false
+        },
+        {
+          "group7": false
+        },
+        {
+          "standard_8": true
+        },
+        {
+          "standard_8_lens": true
+        },
+        {
+          "standard_8_reticle": true
+        },
+        {
+          "standard_8_base": true
+        },
+        {
+          "standard_8_part": true
+        },
+        {
+          "standard_8_mount": true
+        },
+        {
+          "standard_8_hide_when_ads": true
+        },
+        {
+          "standard_8_ring": true
+        },
+        {
+          "Acog": false
+        },
+        {
+          "acog": false
+        },
+        {
+          "acog_lens": false
+        },
+        {
+          "acog_lens2": false
+        },
+        {
+          "acog_back": false
+        },
+        {
+          "acog_reticle": false
+        },
+        {
+          "acog_scope": false
+        },
+        {
+          "acog_other": false
+        },
+        {
+          "elcan": false
+        },
+        {
+          "elcan_lens": false
+        },
+        {
+          "elcan_lens2": false
+        },
+        {
+          "elcan_reticle": false
+        },
+        {
+          "elcan_ring": false
+        },
+        {
+          "elcan_ring2": false
+        },
+        {
+          "elcan_body": false
+        },
+        {
+          "elcan_knob": false
+        },
+        {
+          "elcan_part2": false
+        },
+        {
+          "elcan_part": false
+        },
+        {
+          "coyote": false
+        },
+        {
+          "coyote_reticle": false
+        }
+      ],
+      "is_hurt_color": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "on_fire_color": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      }
+    },
+    "controller.render.awp_tp": {
+      "geometry": "Geometry.awp_tp",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.awp"
+      ],
+      "part_visibility": [
+        {
+          "*": true
+        },
+        {
+          "sight": false
+        },
+        {
+          "iron_sight": false
+        },
+        {
+          "frontsight": false
+        },
+        {
+          "group8": false
+        },
+        {
+          "sight_illuminated": false
+        },
+        {
+          "rearsight": false
+        },
+        {
+          "group7": false
+        },
+        {
+          "standard_8": true
+        },
+        {
+          "standard_8_lens": true
+        },
+        {
+          "standard_8_reticle": false
+        },
+        {
+          "standard_8_base": true
+        },
+        {
+          "standard_8_part": true
+        },
+        {
+          "standard_8_mount": true
+        },
+        {
+          "standard_8_hide_when_ads": true
+        },
+        {
+          "standard_8_ring": true
+        },
+        {
+          "Acog": false
+        },
+        {
+          "acog": false
+        },
+        {
+          "acog_lens": false
+        },
+        {
+          "acog_lens2": false
+        },
+        {
+          "acog_back": false
+        },
+        {
+          "acog_reticle": false
+        },
+        {
+          "acog_scope": false
+        },
+        {
+          "acog_other": false
+        },
+        {
+          "elcan": false
+        },
+        {
+          "elcan_lens": false
+        },
+        {
+          "elcan_lens2": false
+        },
+        {
+          "elcan_reticle": false
+        },
+        {
+          "elcan_ring": false
+        },
+        {
+          "elcan_ring2": false
+        },
+        {
+          "elcan_body": false
+        },
+        {
+          "elcan_knob": false
+        },
+        {
+          "elcan_part2": false
+        },
+        {
+          "elcan_part": false
+        },
+        {
+          "coyote": false
+        },
+        {
+          "coyote_reticle": false
+        }
+      ],
+      "is_hurt_color": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "on_fire_color": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      }
+    }
+  }
+}

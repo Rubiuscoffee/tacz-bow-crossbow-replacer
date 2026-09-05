@@ -1,0 +1,21 @@
+{
+  "resource_pack_name": "tacz_awm_bow",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "bow_standby": {
+      "textures": "textures/items/bow_standby"
+    },
+    "bow_pulling_0": {
+      "textures": "textures/items/bow_pulling_0"
+    },
+    "bow_pulling_1": {
+      "textures": "textures/items/bow_pulling_1"
+    },
+    "bow_pulling_2": {
+      "textures": "textures/items/bow_pulling_2"
+    },
+    "awp": {
+      "textures": "textures/items/awp"
+    }
+  }
+}

@@ -4,24 +4,24 @@
 
 ---
 
-## 🎯 Features / Características
+## Features
 
 - **100% Vanilla (Resource Pack Only)**: No experimental toggles or Behavior Packs required. Fully compatible with Achievements, Realms, and Dedicated Servers.
-- **Bow (Arco) ➔ AWM Sniper Rifle 3D**:
-  - **8x Tactical Telescopic Scope** mounted on top rail.
+- **Bow -> AWM Sniper Rifle 3D**:
+  - **8x Tactical Telescopic Scope** mounted on the top rail.
   - **First-Person (FP) Dual-Arm Animations**: Left arm gripping the handguard/magazine, right arm operating bolt cycling, weapon recoil, and inspect animation.
   - **Third-Person (TP) Support**: Naturally integrated into Minecraft's vanilla poses (`holding` resting down along the side, `bow_equipped` aiming level forward), calibrated to avoid body clipping.
   - **High-Fidelity Audio**: Firing, magazine insert/drop, bolt clicks, and shell ejection extracted from TaCZ.
-- **Crossbow (Ballesta)**:
-  - *Coming soon / Próximamente en desarrollo.*
+- **Crossbow**:
+  - *Coming soon.*
 - **Cross-Platform**: Compatible with Windows 10/11, Android, iOS, Xbox, PlayStation, and Nintendo Switch.
 
 ---
 
-## 📥 Installation / Instalación
+## Installation
 
 ### Method 1: `.mcpack` File (Recommended)
-1. Download the `.mcpack` file from [Releases](https://github.com/brayan/tacz-bow-crossbow-replacer/releases).
+1. Download the `.mcpack` file from [Releases](https://github.com/Rubiuscoffee/tacz-bow-crossbow-replacer/releases).
 2. Double-click (or tap on mobile) to import directly into Minecraft.
 3. Open **Settings > Global Resources** (or your world settings) and activate **TACZ: Bow & Crossbow Guns 3D**.
 
@@ -35,7 +35,7 @@
 
 ---
 
-## 📜 Credits & License / Créditos y Licencias
+## Credits and License
 
 This project is an **unofficial community port and adaptation** for Minecraft Bedrock Edition based on assets from the Java mod **Timeless and Classics Zero (TaCZ)**.
 
@@ -44,7 +44,7 @@ This project is an **unofficial community port and adaptation** for Minecraft Be
 - **Creators**: **The [TaCZ] Timeless and Classics Zero Guns Team**
 - **Official Wiki**: [TaCZ Guns Wiki](https://mcma.club/)
 
-### Special Thanks / Agradecimientos Especiales:
+### Special Thanks:
 - **TACZ Black Ops (Bedrock Community Port)**: For initial Bedrock reference structures, animation controller ideas, and community testing.
 
 ### License Terms:
@@ -57,4 +57,3 @@ This project is an **unofficial community port and adaptation** for Minecraft Be
 
 ### Legal Disclaimer:
 > This is an independent fan project for Minecraft Bedrock Edition. It is not an official Minecraft product, nor is it endorsed by or associated with Mojang Studios, Microsoft, or The TaCZ Team.
-# tacz-bow-crossbow-replacer

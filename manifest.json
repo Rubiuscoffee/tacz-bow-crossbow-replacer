@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "TACZ: Bow & Crossbow Guns 3D",
+    "description": "Replaces vanilla bow and crossbow with 3D animated tactical guns and realistic audio from Timeless and Classics Zero (TaCZ). Unofficial Bedrock port. Credits to: The TaCZ Team.",
+    "uuid": "6cf84ea0-e6c6-42b8-9772-730f7a6e95d8",
+    "version": [
+      1,
+      0,
+      23
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "6b8ec9e3-4c67-4f95-a116-1c9edec30ecf",
+      "version": [
+        1,
+        0,
+        23
+      ]
+    }
+  ]
+}
